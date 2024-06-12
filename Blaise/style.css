@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #c490ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: medium;
+}
+
+.about-excerpt a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+    padding: 10px;
+    font-size: medium;
+}
+
+a:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.landing {
+    background-image: url('home3.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e3f2fd;
+    border-bottom: 1px solid #ddd;
+    height: 400px;
+}
+
+.landing h1{
+    margin-top: 50px;
+    font-weight:bolder;
+}
+
+.slider1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.slide {
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-excerpt, .courses, .calendar, .testimonials, .education, .Experience, .main, .Conference, .Positions, .vol{
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-excerpt h2, .courses h2, .calendar h2, .testimonials h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-excerpt{
+    background-image: url(home3.jpeg);
+    background-size: cover;
+    color:white;
+    height: 200px;
+    font-size: 20px;
+    background-blend-mode: multiply;
+    background-color: rgba(12, 11, 11, 0.562);
+}
+
+.course-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    align-items: center;
+    flex: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+.course-content img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.calendar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.calendar li {
+    padding: 5px 0;
+}
+
+.calendar{
+    text-align: center;
+}
+
+.testimonial {
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border: 0.5px solid blueviolet;
+    border-radius: 10px;
+    flex: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+/* General form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Placeholder styling for consistency */
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+    color: #888;
+}
+
+/* Button styling */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .course-content,
+    .testimonial {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
